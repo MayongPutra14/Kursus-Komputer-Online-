@@ -1,0 +1,610 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: "Poppins", serif;
+}
+
+/* Scrool Behavior smooth for Navigation Bar */
+html {
+  scroll-snap-type: y mandatory;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+
+/* This is for Navigation bar */
+.navbar ul {
+  background-color: #7e1891;
+  list-style-type: none;
+  width: 2000px;
+  padding-left: 20px;
+  overflow: hidden;
+  position: fixed;
+  box-shadow: 1px 0px 5px 1px #691578;
+  z-index: 9999;
+}
+
+.navbar a {
+  color: #fbfbfb;
+  text-decoration: none;
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
+
+.navbar a:hover {
+  background-color: rgb(95, 17, 109);
+}
+
+.navbar li {
+  float: left;
+}
+
+nav li img {
+  width: 150px;
+  height: 20px;
+  margin-left: 800px;
+  padding-top: 10px;
+}
+/* This is teh end of Navigation Bar */
+
+/* This is for Header */
+.firt-page {
+  background-color: #7e1891;
+  width: 100%;
+  height: 500px;
+  border-radius: 0px 0px 50px 50px;
+  box-shadow: 1px 0px 8px 3px #691578;
+
+  h1 {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    color: #fbfbfb;
+  }
+
+  p {
+    text-align: center;
+    color: #f5efff;
+  }
+}
+
+.btn-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  button {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fbfbfb;
+    margin: 20px 20px 0px 0px;
+    padding: 10px;
+    width: 200px;
+    background-color: #ffb200;
+    border-radius: 20px;
+    border: none;
+    transition: 0.5s ease;
+  }
+
+  button a {
+    text-decoration: none;
+    color: #fbfbfb;
+  }
+  & :hover {
+    background-color: #e08600;
+  }
+}
+/* This is the last line of header */
+
+/* This is for About Us */
+article h1 {
+  font-family: "Roboto Condensed", serif;
+  color: #7e1891;
+  font-size: 38px;
+  text-align: center;
+  margin: 80px 0px 50px;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  padding-top: 50px;
+}
+
+.about {
+  display: flex;
+
+  img {
+    width: 600px;
+    height: 500px;
+  }
+
+  .paragraft {
+    width: 700px;
+    height: 500px;
+    background-color: #7e1891;
+    box-shadow: 1px 1px 8px 2px grey;
+  }
+  p {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 20px 0px 0px 0px;
+    padding: 50px 50px 0px;
+  }
+
+  span p {
+    margin-top: -30px;
+  }
+  button {
+    background-color: #ffb200;
+    color: #fbf8ef;
+    font-size: 16px;
+    font-weight: 600;
+    width: 200px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 240px;
+    transition: all 0.5s ease-in-out;
+  }
+
+  button:hover {
+    background-color: #e08600;
+  }
+}
+/* This is the last line of About Us */
+
+/* This is for benefit  */
+.benefit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 30px;
+}
+
+.benefit-card {
+  width: 230px;
+  height: 330px;
+  margin: 50px 50px 10px;
+  padding: 30px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  border-radius: 20px;
+
+  img {
+    margin: 20px 0px 0px 70px;
+    width: 110px;
+    height: 110px;
+  }
+
+  h3 {
+    font-family: "Roboto Condensed", serif;
+    font-size: 20px;
+    color: #333333;
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  p {
+    font-family: "Poppins", serif;
+    font-size: small;
+    color: #777777;
+    margin-top: 15px;
+    padding: 5px 10px 10px;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+
+/* h1 yang akan berpengaruh ke seluruh elemen h1 */
+/* h1 {
+  font-family: "Roboto Condensed", serif;
+  color: #7E1891;
+  font-size: 38px;
+  margin: 80px 0px 50px;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-align: center;
+} */
+
+/* This is the last line of Benefit */
+
+/* This is For Roadmap */
+.roadmap {
+  height: 1200px; /*use background color if you wanna know*/
+  /* background-color: #777777; */
+
+  h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    color: #7e1891;
+    font-size: 38px;
+    margin-bottom: 50px;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-align: center;
+  }
+
+  .card-size {
+    width: 330px;
+    border-radius: 20px;
+    margin: 20px 0px 0px 50px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .css-logo {
+    margin-left: 850px;
+  }
+
+  img {
+    width: 200px;
+    width: 200px;
+    margin-left: 60px;
+  }
+
+  p {
+    font-family: "Poppins", serif;
+    font-size: small;
+    color: #777777;
+    line-height: 1.8em;
+    text-align: center;
+    padding: 10px 20px;
+  }
+
+  .v-line {
+    background-color: #7e1891;
+    margin: auto;
+    width: 10px;
+    height: 1230px;
+    border-radius: 10px;
+    position: absolute;
+    top: 2580px;
+    left: 630px;
+  }
+
+  .circle {
+    background-color: #7e1891;
+    margin: 0px auto 500px;
+    border-radius: 70%;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    position: absolute;
+    top: 2580px;
+    left: 5px;
+  }
+
+  .first-circle {
+    margin: -10px 0px 500px 606px;
+  }
+  .second-circle {
+    margin: 600px 0px 500px 606px;
+  }
+
+  .third-circle {
+    margin: 1180px 0px 400px 606px;
+  }
+  .md-circle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* This is the last of Roadmap */
+
+/* This is for Tabel Pricing */
+.table-pricing {
+  font-family: "DM Serif Text", serif;
+  margin: 400px auto 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  transition: all 0.5s ease-in-out;
+
+  h2 {
+    font-size: 4rem;
+    color: #7e1891;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    border-bottom: 2px solid #7e1891;
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: #7e1891;
+    text-shadow: 1px 1px 5px rgb(234, 225, 225);
+    text-align: center;
+    margin: 35px 0px 20px;
+  }
+
+  sub {
+    font-size: small;
+  }
+
+  .line {
+    background-color: #7e1891;
+    width: 100px;
+    height: 2px;
+    border-radius: 20px;
+    margin-left: 95px;
+  }
+
+  button {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    color: #7e1891;
+    background-color: aliceblue;
+    width: 90%;
+    margin: 30px 0px 0px 15px;
+    padding: 5px 0px;
+    border: 1px solid #7e1891;
+    border-radius: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.table-pricing:hover {
+  cursor: pointer;
+  border: none;
+  transform: translateY(-10px);
+}
+
+.table-pricing button:hover {
+  cursor: pointer;
+  color: #f7f7f7;
+  background-color: #7e1891;
+}
+/* This is The end of Tabel Pricing */
+
+/* This is for Footer */
+footer {
+  font-family: "Poppins", serif;
+  background-color: #7e1891;
+  width: 100%;
+  height: 450px;
+  margin-top: 150px;
+
+  h1 {
+    font-family: "Roboto Condensed", serif;
+    color: #f5efff;
+    font-size: 38px;
+    padding-top: 40px;
+    text-align: center;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 40px 0px 0px 150px;
+    padding-left: 50px;
+  }
+
+  i {
+    color: #7e1891;
+    background-color: #f5efff;
+    font-size: larger;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin: 20px 0px 20px 47px;
+    padding-top: 10px;
+    border-radius: 80%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .fa-envelope {
+    margin-left: 75px;
+  }
+
+  .contact p {
+    color: #f5efff;
+    width: 200px;
+    text-align: justify;
+    margin-left: -20px;
+  }
+
+  .copyright {
+    color: #f5efff;
+    background-color: #6b167a;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+  }
+
+  p span {
+    color: #ffe6e6;
+  }
+}
+
+i:hover {
+  cursor: pointer;
+  color: #f5efff;
+  background-color: #ad88c6;
+}
+/* This is the end of footer */
+
+/* This hover is for roadmap-card and benefit card */
+.card-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  cursor: pointer;
+  background-color: #dbdee38e;
+}
+/* This is the end of Card Hover */
+
+/* This Query is for all conntent */
+@media (max-width: 576px) {
+  /* This is for navbar */
+  .navbar a {
+    /* text-align: center; */
+    margin-left: 18px;
+  }
+
+  .navbar ul li img {
+    display: none;
+  }
+  /* This is the end of navbar */
+
+  /* This is for header */
+  .firt-page {
+    height: 360px;
+
+    h1 {
+      font-size: 15px;
+      padding: 70px 0px 15px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
+
+  .btn-header {
+    padding: 6px;
+    margin-left: 10px;
+
+    button {
+      font-size: small;
+      font-weight: 400;
+      margin-left: 10px;
+      padding: 3px;
+    }
+  }
+  /* This is the end of header */
+
+  /* This is for About us */
+  article h1 {
+    margin-top: 20px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 400px;
+      height: 300px;
+    }
+
+    .paragraft {
+      width: 375px;
+      height: 660px;
+    }
+
+    p {
+      text-align: justify;
+      padding: 25px;
+    }
+
+    button {
+      font-size: small;
+      font-weight: 400;
+      margin: 20px 100px 0px;
+    }
+  }
+  /* This is the end of About us */
+
+  /* This is for Benefit class */
+  .benefit {
+    margin-left: 0px;
+  }
+
+  .benefit-card {
+    height: 295px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin-top: 0px;
+    }
+
+    p {
+      padding: 0px;
+    }
+  }
+  /* This is the end of Benefit class */
+
+  /* This is for Road Map */
+  .roadmap {
+    .card-size {
+      margin: 22px;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 20px 94px 5px;
+    }
+
+    .css-logo {
+      margin-left: 22px;
+    }
+
+    p {
+      text-align: center;
+      padding: 10px 30px 30px;
+    }
+
+    .v-line {
+      width: 0px;
+      height: 0px;
+    }
+
+    .circle {
+      width: 0px;
+      height: 0px;
+    }
+  }
+  /* This is the end of Road Map */
+
+  /* This is for Table Pricing */
+  .table-pricing {
+    margin-top: 350px;
+  }
+  /* This is the end of Table Pricing */
+
+  /* This is the for footer */
+  footer {
+    height: 500px;
+    width: 100%;
+
+    .contact {
+      flex-direction: column;
+      margin: 10px 0px 0px 60px;
+    }
+
+    .fa-icons {
+      margin-left: 68px;
+    }
+    i {
+      font-size: small;
+      width: 30px;
+      height: 22px;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      font-size: small;
+      text-align: center;
+    }
+  }
+  /* This is the end of footer */
+}
+/* This is the end of query for all content */
