@@ -1,0 +1,819 @@
+:root {
+  --ff-title: "Roboto Condensed", sans-serif;
+
+  /* background-color */
+  --color-primary: #7e1891;
+  --btn-color: #ffb200;
+  --color-secondary: aliceblue;
+
+  /* Color For Teks*/
+  --text-color-primary: #fbfbfb;
+  --text-color-secondary: #504d4d;
+  --text-color-h3: #2c2b2b;
+
+  /* Space Size */
+  --size-16: 1rem; /* 16px */
+  --size-32: 2rem; /* 32px */
+  --size-64: 4rem; /* 64px */
+  --size-128: 8rem; /* 128px */
+  --size-256: 16rem; /* 256px */
+  --size-512: 32rem; /* 512px */
+  --size-1024: 64rem; /* 1024px */
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  background-color: var(--color-secondary);
+  font-family: "Poppins", serif;
+}
+
+/* Scrool Behavior smooth for Navigation Bar */
+html {
+  scroll-snap-type: y mandatory;
+  /* overflow-x: hidden; */
+  scroll-behavior: smooth;
+}
+
+/* This is for Navigation bar */
+.navbar ul {
+  background-color: var(--color-primary);
+  list-style-type: none;
+  width: 100%;
+  padding-left: 20px;
+  overflow: hidden;
+  position: fixed;
+  box-shadow: 1px 0px 5px 1px #691578;
+  z-index: 9999;
+}
+
+.navbar a {
+  color: var(--text-color-primary);
+  text-decoration: none;
+  padding: 10px 10px;
+  display: block;
+  text-align: center;
+  border-radius: 1px;
+  transition: 0.5s ease;
+}
+
+.navbar a:hover {
+  background-color: rgb(95, 17, 109);
+}
+
+.navbar li {
+  float: left;
+}
+
+nav li img {
+  width: 9.3rem;
+  height: 20px;
+  margin-left: 46rem;
+  padding-top: 10px;
+}
+/* This is teh end of Navigation Bar */
+
+/* All Of header 1 except in the (. first page) */
+h1 {
+  font-family: var(--ff-title);
+  color: var(--color-primary);
+  font-size: 38px;
+  padding: 4rem 0rem;
+  margin-left: 2rem;
+  /* margin: var(--size-64) 0rem; */
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-align: center;
+}
+
+/* This is for Header */
+.firt-page {
+  background-color: var(--color-primary);
+  width: 100%;
+  height: 500px;
+  border-radius: 0px 0px 50px 50px;
+  box-shadow: 1px 0px 8px 3px #691578;
+
+  h1 {
+    color: var(--text-color-primary);
+    width: 50%;
+    margin: 0 auto;
+    padding: calc(4rem - 4px);
+    text-align: center;
+    text-decoration-line: none;
+  }
+
+  p {
+    text-align: center;
+    color: var(--text-color-primary);
+  }
+}
+
+.btn-firt-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  button {
+    display: block;
+    color: var(--text-color-primary);
+    margin: calc(1rem + 4px) calc(1rem + 4px) calc(0rem) calc(0rem);
+    padding: 10px;
+  }
+}
+/* This is the last line of header */
+
+/* This is for About Us */
+
+.about {
+  display: flex;
+
+  img {
+    width: 600px;
+    height: 500px;
+  }
+
+  .paragraft {
+    color: var(--text-color-primary);
+    width: 100%;
+    height: 500px;
+    background-color: var(--color-primary);
+    box-shadow: 1px 1px 8px 2px grey;
+  }
+
+  p {
+    font-size: 14px;
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.5rem;
+    margin: 20px 0px 0px 0px;
+    padding: 50px 50px 0px;
+  }
+
+  button {
+    margin: 3rem 0rem 0rem 16rem;
+  }
+
+  span p {
+    margin-top: calc(-2rem - 2);
+  }
+}
+/* This is the last line of About Us */
+
+button {
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  width: 200px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+button a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #e08600;
+}
+
+/* This is for Mentor */
+.mentor {
+  display: flex;
+  justify-content: space-around;
+
+  img {
+    border: 4px solid var(--color-primary);
+    margin: 3rem 0rem 0rem 2rem;
+    width: 7rem;
+    height: 8rem;
+    border-radius: 90%;
+  }
+
+  h2 {
+    color: var(--text-color-secondary);
+  }
+}
+
+/* This is the end of mentor */
+
+/* This is for benefit  */
+.benefit {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 30px;
+}
+
+.benefit-card {
+  width: 230px;
+  height: 330px;
+  margin: 50px 50px 10px;
+  padding: 30px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  border-radius: 20px;
+
+  img {
+    margin: 20px 0px 0px 65px;
+    width: 110px;
+    height: 110px;
+  }
+
+  h3 {
+    font-family: "Roboto Condensed", serif;
+    font-size: 20px;
+    color: var(--text-color-h3);
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  p {
+    font-size: small;
+    color: var(--text-color-secondary);
+    margin-top: 15px;
+    padding: 5px 10px 10px;
+    line-height: 1.5rem;
+    text-align: center;
+  }
+}
+/* This is the last line of Benefit */
+
+/* This is For Roadmap */
+.roadmap {
+  height: calc(
+    var(--size-512) * 2.7
+  ); /*use background color if you wanna know*/
+  /* background-color: #777777; */
+
+  .card-size {
+    width: 330px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 90px;
+    box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+      rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .css-logo {
+    margin-left: 850px;
+  }
+
+  img {
+    width: 200px;
+    width: 200px;
+    padding-top: var(--size-16);
+    margin-left: 70px;
+  }
+
+  p {
+    font-size: small;
+    color: var(--text-color-secondary);
+    text-align: justify;
+    padding: 1rem 2rem;
+    line-height: 1.5rem;
+  }
+
+  .v-line {
+    background-color: var(--color-primary);
+    margin: auto;
+    width: 10px;
+    height: 1300px;
+    border-radius: 10px;
+    position: absolute;
+    top: calc(var(--size-1024) + var(--size-1024) + 49rem);
+    left: 642px;
+  }
+
+  .circle {
+    background-color: var(--color-primary);
+    margin: 0px auto 500px;
+    border-radius: 70%;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    position: absolute;
+    top: calc(var(--size-1024) + var(--size-1024) + 49rem);
+    left: 1rem;
+  }
+
+  .first-circle {
+    margin: -10px 0px 500px 606px;
+  }
+  .second-circle {
+    margin: 650px 0px 500px 606px;
+  }
+
+  .third-circle {
+    margin: 1250px 0px 400px 606px;
+  }
+  .md-circle {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* This is the last of Roadmap */
+
+/* This is for Tabel Pricing */
+.table-pricing {
+  font-family: "DM Serif Text", serif;
+  margin: 250px auto 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 5%;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  transition: all 0.5s ease-in-out;
+
+  h2 {
+    font-size: 4rem;
+    color: var(--color-primary);
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+    border-bottom: 2px solid var(--color-primary);
+  }
+
+  h3 {
+    font-size: 2rem;
+    color: var(--color-primary);
+    text-align: center;
+    margin: 35px 0px 20px;
+  }
+
+  sub {
+    font-size: small;
+  }
+
+  .line {
+    background-color: var(--color-primary);
+    width: 100px;
+    height: 2px;
+    border-radius: 20px;
+    margin-left: 95px;
+  }
+
+  button {
+    font-weight: 700;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    width: 90%;
+    margin: 30px 0px 0px 15px;
+    padding: 5px 0px;
+    border: 1px solid var(--color-primary);
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.table-pricing:hover {
+  cursor: pointer;
+  border: none;
+  transform: translateY(-10px);
+}
+
+.table-pricing button:hover {
+  cursor: pointer;
+  color: #f7f7f7;
+  background-color: #7e1891;
+}
+/* This is The end of Tabel Pricing */
+
+/* This is for Footer */
+footer {
+  background-color: #7e1891;
+  width: 100%;
+  height: 450px;
+  margin-top: 150px;
+
+  h1 {
+    color: var(--color-secondary);
+    text-decoration-line: none;
+    padding: 3rem;
+    /* font-family: "Roboto Condensed", serif;
+    color: #f5efff;
+    font-size: 38px;
+    text-align: center;
+    text-decoration-line:none ; */
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 40px 0px 0px 150px;
+    padding-left: 50px;
+  }
+
+  .contact p {
+    color: var(--color-secondary);
+    width: 200px;
+    text-align: justify;
+    margin-left: -20px;
+  }
+
+  i {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    font-size: larger;
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    margin: 0px 0px 20px 47px;
+    padding-top: 10px;
+    border-radius: 80%;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .fa-envelope {
+    margin-left: 75px;
+  }
+
+  .copyright {
+    text-align: center;
+    color: var(--color-secondary);
+    background-color: #6b167a;
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    padding-top: 20px;
+  }
+
+  p span {
+    color: #ffe6e6;
+  }
+}
+
+i:hover {
+  cursor: pointer;
+  color: #f5efff;
+  background-color: #ad88c6;
+}
+/* This is the end of footer */
+
+/* This hover is for roadmap-card and benefit card */
+.card-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  cursor: pointer;
+  background-color: #dbdee38e;
+}
+/* This is the end of Card Hover */
+
+/* This Query is for all conntent */
+@media (max-width: 480px) {
+  /* This is for navbar */
+  .navbar a {
+    margin-left: 18px;
+  }
+
+  .navbar ul li img {
+    display: none;
+  }
+  /* This is the end of navbar */
+
+  /* This is for header */
+  .firt-page {
+    height: 360px;
+
+    h1 {
+      font-size: 15px;
+      padding: 70px 0px 15px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
+
+  .btn-header {
+    padding: 6px;
+    margin-left: 10px;
+
+    button {
+      font-size: small;
+      font-weight: 400;
+      margin-left: 10px;
+      padding: 3px;
+    }
+  }
+  /* This is the end of header */
+
+  /* This is for About us */
+  article h1 {
+    margin-top: 20px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 300px;
+    }
+
+    .paragraft {
+      width: 100%;
+      height: 660px;
+    }
+
+    p {
+      text-align: justify;
+      padding: 25px;
+    }
+
+    button {
+      font-size: small;
+      font-weight: 400;
+      margin: 20px 100px 0px;
+    }
+  }
+  /* This is the end of About us */
+
+  /* This is for Benefit class */
+  .benefit {
+    margin-left: 0px;
+  }
+
+  .benefit-card {
+    height: 295px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin-top: 0px;
+    }
+
+    p {
+      padding: 0px;
+    }
+  }
+  /* This is the end of Benefit class */
+
+  /* This is for Mentor */
+  .mentor {
+    flex-wrap: wrap;
+
+    img {
+      width: 4rem;
+      height: 4rem;
+      margin-left: 1.7rem;
+    }
+
+    h2 {
+      font-size: calc(var(--size-16) - 3);
+    }
+  }
+  /* This is the end of mentor */
+
+  /* This is for Road Map */
+  .roadmap {
+    .card-size {
+      margin-left: 40px;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 20px 94px 5px;
+    }
+
+    .css-logo {
+      margin: 2rem 2.5rem;
+      /* margin-left: 40px; */
+    }
+
+    p {
+      text-align: center;
+      padding: 10px 30px 30px;
+    }
+
+    .v-line {
+      width: 0px;
+      height: 0px;
+    }
+
+    .circle {
+      width: 0px;
+      height: 0px;
+    }
+  }
+  /* This is the end of Road Map */
+
+  /* This is for Table Pricing */
+  .table-pricing {
+    margin-top: 350px;
+  }
+  /* This is the end of Table Pricing */
+
+  /* This is the for footer */
+  footer {
+    height: 500px;
+    width: 100%;
+
+    .contact {
+      flex-direction: column;
+      margin: 10px 0px 0px 60px;
+    }
+
+    .fa-icons {
+      margin-left: 68px;
+    }
+    i {
+      font-size: small;
+      width: 30px;
+      height: 22px;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      font-size: small;
+      text-align: center;
+    }
+  }
+  /* This is the end of footer */
+}
+
+/* This is the end of query for all content */
+@media (min-width: 481px) and (max-width: 767px) {
+  /* This is for navbar */
+  .navbar a {
+    margin-left: 15px;
+  }
+
+  .navbar ul li img {
+    margin-left: 250px;
+  }
+  /* This is the end of navbar */
+
+  /* This is for header */
+  .firt-page {
+    height: 360px;
+
+    h1 {
+      font-size: 22px;
+      padding: 70px 0px 15px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  .btn-header {
+    padding: 6px;
+    margin-left: 10px;
+
+    button {
+      font-weight: 400;
+      margin-left: 10px;
+      padding: 6px;
+    }
+  }
+  /* This is the end of header */
+
+  /* This is for About us */
+  article h1 {
+    margin-top: 20px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 767px;
+      height: 767px;
+    }
+
+    .paragraft {
+      width: 767px;
+      height: 420px;
+    }
+
+    p {
+      text-align: justify;
+      padding: 25px;
+    }
+
+    button {
+      font-weight: 400;
+      margin: 20px 30px 0px;
+    }
+  }
+  /* This is the end of About us */
+
+  /* This is for Benefit class */
+  .benefit {
+    /* margin-left: -18px; */
+    margin: 0px -15px;
+  }
+
+  .benefit-card {
+    height: 295px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      margin-top: 0px;
+    }
+
+    p {
+      padding: 0px;
+    }
+  }
+  /* This is the end of Benefit class */
+
+  /* This is for Road Map */
+  .roadmap {
+    .card-size {
+      margin-left: 40px;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      margin: 20px 94px 5px;
+    }
+
+    .javascripst-rounded-logo {
+      margin-left: 230px;
+    }
+    .css-logo {
+      padding: 8px 0px;
+      margin: -400px 0px 50px 400px;
+    }
+
+    p {
+      text-align: center;
+      padding: 10px 30px 30px;
+    }
+
+    .v-line {
+      width: 0px;
+      height: 0px;
+    }
+
+    .circle {
+      width: 0px;
+      height: 0px;
+    }
+  }
+  /* This is the end of Road Map */
+
+  /* This is for Table Pricing */
+  .table-pricing {
+    width: 350px;
+    margin: 0px 224px;
+  }
+  /* This is the end of Table Pricing */
+
+  /* This is the for footer */
+  footer {
+    width: 767px;
+    height: 290px;
+
+    .contact {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 10px 0px 0px -45px;
+      padding: 10px 0px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    i {
+      font-size: 12px;
+      width: 20px;
+      height: 18px;
+      margin: 10px 0px 10px 70px;
+    }
+
+    .contact p {
+      font-size: 12px;
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    .copyright {
+      height: 25px;
+      margin-top: 0px;
+      padding: 20px 0px 10px;
+    }
+  }
+  /* This is the end of footer */
+}
+/* This is the end of query for all content */
